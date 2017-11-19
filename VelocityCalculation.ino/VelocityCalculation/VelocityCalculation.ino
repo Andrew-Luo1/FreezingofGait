@@ -68,13 +68,13 @@ void loop() {
   day = (double) ay;
   daz = (double) az;
 
-  angle = ( acos(day / sqrt((dax*dax) + (day*day) + (daz*daz))) - PI/2 ) * -1;
+  angle = ( acos(day / sqrt((dax*dax) + (day*day) + (daz*daz))) - PI/2 );
   
-  //Serial.print(angle);
-  //Serial.print(",");
+  Serial.print(angle);
+  Serial.print(",");
 
   //remove influence of gravity on ay, nay. g is 16384 in the scaling system of the imu. 
-  nay = day - 16384*sin(angle);
+  nay = day + 16384*sin(angle);
   Serial.print(nay);
   Serial.print(",");
   

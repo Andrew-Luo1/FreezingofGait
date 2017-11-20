@@ -55,8 +55,8 @@ void loop() {
   angle = ( acos(day / sqrt((dax*dax) + (day*day) + (daz*daz))) );
   Serial.println(angle);
   
-  //a) Stopping
-//if your angle is around zero for more than a few readings and your x,y,z are within a certain threshold 
+  //a) Stopping(
+  //if your angle is around zero for more than a few readings and your x,y,z are within a certain threshold 
   //if gyration is zero
   //b) walking
   //c) freezing of gait 

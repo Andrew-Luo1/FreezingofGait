@@ -1,7 +1,7 @@
 clear all;
 close all;
 
-values = load("6-6-2-new.csv");
+values = load('6-6-2-new.csv');
 dax = movmean(values(:,2),3);
 day = movmean(values(:,3),3);
 daz = movmean(values(:,4),3);

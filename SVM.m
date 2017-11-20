@@ -3,7 +3,7 @@ function SVM( X, y, C, max_iter )
 %can be around 20. X is a two column array containing feature values. y is
 %a vector storing the class information. (0 or 1; freezing or normal)
 
-    model = svmTrain(X, y, C, @linearKernel, 1e-3, max_iter);
+    model = fitcsvm(X, y, C, @linearKernel, 1e-3, max_iter);
     w = model.w;
     b = model.b;
     xp = linspace(min(X(:,1)), max(X(:,1)), 100);

@@ -43,7 +43,7 @@ void receiveEvent(int bytes) {
 
   if(millis() < 1200) {
     count++;
-    cAx = (cAx + (data[0]*256)|(data[1])) / count;
+    cAx = (cAx + (data[0]*256)|(data[1])) / count; //using the bitwise or. 
     cAy = (cAy + (data[2]*256)|(data[3])) / count;
     cGz = (cGz + (data[10]*256)|(data[11])) / count;
   }
@@ -59,13 +59,12 @@ void loop() {
   
   Gz = movingAvgFilter(prevGz, Gz-cGz);
   Ax = movingAvgFilter(prevAx, Ax-cAx);
-  
   queueGz[i] = Gz;
   for(int j = 0; j < n; j++) {
     meanGz = meanGz + queueGz[i];
   }
   meanGz = meanGz / n;
-
+  Serial.print(Ax);
   queueAx[i] = Ax;
   if(meanGz < 500){
     boolean isStop = true;

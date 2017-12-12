@@ -1,4 +1,4 @@
 # FreezingofGait
 Freezing of Gait algorithm
 
-Created in fall 2018.
+Created in fall 2017.

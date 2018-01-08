@@ -1,1 +1,1 @@
-An extremely basic implementation of machine learning, using the simplified SVMTrain matlab function. 
+An binary linear SVM classfier, trained using the SVMTrain matlab function. 

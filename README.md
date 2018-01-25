@@ -12,7 +12,7 @@ This repository contains the algorithm for a device that detects freezing of gai
 ### Included Files
 This repository contains three iterations of the code: 
 * "firstAlgo" was a quick algorithm that classified the type of gait based on minimally processed accelerometer values. 
-* Main contain the mostly complete iteration that utilizes gait segregation and a binary SVM. 
+* Main contains the mostly complete iteration that utilizes gait segregation and a binary SVM. 
 * Bluetooth Codebase was used for the final prototype. The RedBearLab BLE Nano microcontroller was for its bluetooth functionalities. 
 * The two csv files contain sample angle data for healthy and freezing gait. 
 * SVM contains matlab code to run the support vector machine and find optimized thresholds. 

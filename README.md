@@ -42,7 +42,7 @@ SVM(X,y,C,max_iter)
 ## Authors
 
 Andrew Luo <br/>
-Collete McKee<br/>
+Nathan Duarte <br/>
 Howard Yu<br/>
 Alexander Tummon Simmons<br/>
-Nathan Duarte
+Colette McKee 
